@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.a1213.mominulcse7.chatappproject">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chat"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/chat"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".AboutDeveloper"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".StartActivity" />
+        <activity android:name=".StatusActivity" />
+        <activity android:name=".UsersActivity" />
+        <activity android:name=".ProfileActivity"></activity>
+    </application>
+
+</manifest>
